@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(images/reed-naliboff-k8B-YoDXPy4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left {
+    width: 30vw;
+}
+
+.logo {
+    position: relative;
+    top: 300px;
+    background-color: rgb(0000, 0000, 0000, 0.5);
+    color: white;
+    height: 175px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    opacity: 1;
+    height: 70px;
+}
+
+h1 {
+    opacity: 1;
+}
+
+.right {
+    width: 70vw;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+    background-color: rgb(234, 234, 234);
+}
+
+.top-screen {
+    background-color: rgb(234, 234, 234);
+    padding: 200px 300px 50px 50px;
+    width: 700px;
+}
+
+span {
+    font-style: italic;
+}
+
+.middle-screen {
+    background-color: white;
+    height: 200px;
+    padding: 50px 50px 100px 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: auto;
+}
+
+.form1,
+.form2,
+.form3 {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+ul {
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: -20px;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    border-radius: 3px;
+    border: solid 1px lightslategrey;
+    
+    padding-left: 5px;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    border: solid 1px rgb(0, 0, 0);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    outline: 0;
+}
+
+.error {
+    border: solid 2px rgb(177, 0, 0);
+}
+
+.valid {
+    border: solid 2px rgb(0, 135, 16);
+}
+
+.bottom-screen {
+    background-color: rgb(234, 234, 234);
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: seagreen;
+    width: 300px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+}
+
+.log-in-info {
+    position: relative;
+    top: 80px;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: white;
+    border: 2px solid seagreen;
+    color: seagreen;
+}
+
+.label-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.label {
+    background-color: rgb(201, 164, 0);
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.error-message {
+    color: rgb(164, 0, 0);
+    margin-top: 2px;
+}

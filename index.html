@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo">
+            <img class="icon" src="/images/reshot-icon-pretzel-7YE26VWQ3P.svg" alt="">
+            <h1>ODIN</h1>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="right">
+        <div class="top-screen">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eos sint. Molestias, quibusdam quos
+                accusamus
+                quis nisi dignissimos hic repellendus iste quod dolorum fuga obcaecati iure, sint animi eos deleniti.
+            </h3>
+            <br>
+            <h3>Lorem <span>ipsum</span> dolor sit.
+            </h3>
+        </div>
+        <div class="middle-screen">
+            <h2>Let's do this!</h2>
+            <form action="POST">
+                <ul>
+                    <div class="form1">
+                        <li>
+                            <div class="label-text">
+                                <label for="name">FIRST NAME</label>
+                                <div class="required-label"></div>
+                            </div>
+                            <input type="text" id="name" placeholder="John" pattern="^[a-zA-Z ]*">
+                        </li>
+                        <li>
+                            <div class="label-text">
+                                <label for="lastname">LAST NAME</label>
+                                <div class="required-label"></div>
+                            </div>
+                            <input type="text" id="lastname" placeholder="Cena">
+                        </li>
+                    </div>
+                    <div class="form2">
+                        <li>
+                            <div class="label-text">
+                                <label for="email">EMAIL</label>
+                                <div class="required-label"></div>
+                            </div>
+                            <input type="email" id="email" placeholder="john.cena@undertaker.com">
+                        </li>
+                        <li>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" placeholder="+44 07802802802">
+                        </li>
+                    </div>
+                    <div class="form3">
+                        <li>
+                            <div class="label-text">
+                                <label for="password">PASSWORD</label>
+                                <div class="required-label"></div>
+                            </div>
+                            <input type="password" id="password" pattern= "^[a-zA-Z0-9]*">
+                        </li>
+                        <li id="password-test">
+                            <div class="label-text" >
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <div class="required-label"></div>
+                            </div>
+                            <input type="password" id="confirm-password" pattern= "^[a-zA-Z0-9]*">
+                        </li>
+                    </div>
+                </ul>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+        <div class="bottom-screen">
+            <p class="log-in-info">Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
